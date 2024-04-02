@@ -1,0 +1,16 @@
+int main()
+{
+  print("Test des conditions:\n\n");
+  int a = 0;
+  print("Si tu donne un nombre plus grand que 10 je te dis un secret\nSi c'est en dessous de 10 je dis rien\n");
+  print("Donne un age -> ");
+  input(a);
+  if (a > 10)
+  {
+    print("\nMon secret c'est que j'aime les pommmes\n");
+  }
+  else
+  {
+    print("\nT'es trop petits pour mon secret\n");
+  }
+}

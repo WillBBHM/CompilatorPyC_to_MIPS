@@ -1,0 +1,50 @@
+int main() {
+    int choixUtilisateur;
+    int choixOrdinateur;
+    int seed = 42;
+    int rejouer = 0;
+    int randomNum = 0;
+
+    print("Bienvenue dans le jeu de Pierre-papier-ciseaux contre l'ordinateur !\n\n");
+
+    while (rejouer == 0) {
+        print("Choisissez votre coup (1 pour pierre, 2 pour papier, 3 pour ciseaux) : ");
+        input(choixUtilisateur);
+
+        seed = (seed * 37 + 13) % 101;
+        randomNum = seed % 3;
+
+        if (randomNum == 0) {
+            choixOrdinateur = 1;
+        } else {
+            if (randomNum == 1) {
+                choixOrdinateur = 2;
+            } else {
+                choixOrdinateur = 3;
+            }
+        }
+
+        print("Vous avez choisi : ", choixUtilisateur,"\n");
+        print("L'ordinateur a choisi : ",choixOrdinateur,"\n");
+
+        if (choixUtilisateur == choixOrdinateur) {
+            print("Égalité !\n");
+        } else {
+            if ((choixUtilisateur == 1 && choixOrdinateur == 3) ||
+                (choixUtilisateur == 2 && choixOrdinateur == 1) ||
+                (choixUtilisateur == 3 && choixOrdinateur == 2)) {
+                print("Vous gagnez !\n");
+            } else {
+                print("L'ordinateur gagne !\n");
+            }
+        }
+
+
+        print("\nVoulez-vous rejouer ? (O pour oui, autre touche pour non) : ");
+        input(rejouer);
+    }
+
+    print("Merci d'avoir joué !\n");
+
+    return 0;
+}

@@ -1,0 +1,12 @@
+int main()
+{
+  print("Test de la boucle:\n\n");
+  int a = 0;
+  while (a != 5)
+  {
+    print(a, "\n");
+    a = a + 1;
+  }
+  print("Boom\n");
+  print("Test de la boucle valide\n");
+}

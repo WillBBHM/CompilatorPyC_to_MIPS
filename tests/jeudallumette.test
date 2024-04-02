@@ -1,0 +1,41 @@
+int main() {
+  int nb_allumettes = 20;
+  int tour_joueur = 1;
+  int nb_allumettes_joueur = 0;
+
+  while (nb_allumettes > 0) {
+    print("Il reste ", nb_allumettes, " allumettes.\n");
+
+    if (tour_joueur == 1) {
+      print("Au joueur de jouer : combien d'allumettes prenez-vous ? (1, 2 ou 3)\n");
+      input(nb_allumettes_joueur);
+
+      while (nb_allumettes_joueur < 1 || nb_allumettes_joueur > 3 || nb_allumettes - nb_allumettes_joueur < 0) {
+        print("Saisie invalide. Veuillez saisir un nombre d'allumettes entre 1 et 3, ou un nombre inférieur au nombre d'allumettes restantes.\n");
+        input(nb_allumettes_joueur);
+      }
+
+      nb_allumettes = nb_allumettes - nb_allumettes_joueur;
+
+      tour_joueur = 2;
+    }
+    else 
+    {
+      while (nb_allumettes % 4 != 0) {
+        nb_allumettes = nb_allumettes - 1 ;
+      }
+
+      nb_allumettes = nb_allumettes - 1;
+
+      tour_joueur = 1;
+    }
+  }
+
+  if (tour_joueur == 1) {
+    print("Le joueur a perdu.\n");
+  } else {
+    print("L'ordinateur a gagné.\n");
+  }
+
+  return 0;
+}

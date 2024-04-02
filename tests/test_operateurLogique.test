@@ -1,0 +1,48 @@
+int main()
+{
+  print("Test des opérateur logique\n\n");
+
+  print("Test supérieur\n");
+  print("5 > 1: ", 5 > 1, "\n");
+  print("5 > 10: ", 5 > 10, "\n");
+  print("5 > 5: ", 5 > 5, "\n\n");
+
+  print("Test inférieur\n");
+  print("5 < 1: ", 5 < 1, "\n");
+  print("5 < 10: ", 5 < 10, "\n");
+  print("5 < 5: ", 5 < 5, "\n\n");
+
+  print("Test supérieur égale\n");
+  print("5 >= 1: ", 5 >= 1, "\n");
+  print("5 >= 10: ", 5 >= 10, "\n");
+  print("5 >= 5: ", 5 >= 5, "\n\n");
+
+  print("Test inférieur égale\n");
+  print("5 <= 1: ", 5 <= 1, "\n");
+  print("5 <= 10: ", 5 <= 10, "\n");
+  print("5 <= 5: ", 5 <= 5, "\n\n");
+
+  print("Test d'égalité\n");
+  print("5 == 1: ", 5 == 1, "\n");
+  print("5 == 5: ", 5 == 5, "\n\n");
+
+  print("Test d'inégalité\n");
+  print("5 != 1: ", 5 != 1, "\n");
+  print("5 != 5: ", 5 != 5, "\n\n");
+
+  print("Test de And\n");
+  print("1 && 1: ", 1 && 1, "\n");
+  print("1 && 0: ", 1 && 0, "\n\n");
+
+  print("Test Or\n");
+  print("1 || 1: ", 1 || 1, "\n");
+  print("1 || 0: ", 1 || 0, "\n\n");
+
+  print("Test Not\n");
+  print("not 1: ", !1, "\n");
+  print("not 0: ", !0, "\n\n");
+
+  print("Test Xor\n");
+  print("1 xor 1: ", 1 ^ 1, "\n");
+  print("1 xor 0: ", 1 ^ 0, "\n");
+}

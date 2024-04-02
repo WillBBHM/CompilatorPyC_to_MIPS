@@ -1,0 +1,13 @@
+int main()
+{
+  1256;
+  true;
+  "bonjour";
+  print("Test des types: \n\n");
+  print("Int: ", 1256);
+  print("\nTest Valide\n\n");
+  print("Bool: ", true);
+  print("\nTest Valide\n\n");
+  print("string: ", "bonjour\n");
+  print("\nTest Valide\n");
+}

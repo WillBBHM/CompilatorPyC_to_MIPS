@@ -1,0 +1,14 @@
+int main()
+{
+  print("Test des calculs:\n\n");
+  print("addition 3 + 5 = ", 3 + 5);
+  print("\nTest Valide\n\n");
+  print("soustraction 5 - 3 = ", 5 - 3);
+  print("\nTest Valide\n\n");
+  print("multiplication 3 * 5 = ", 3 * 5);
+  print("\nTest Valide\n\n");
+  print("division 4 / 2 = ", 4 / 2);
+  print("\nTest Valide\n\n");
+  print("modulo 4 % 2 = ", 4 % 2);
+  print("\nTest Valide\n");
+}

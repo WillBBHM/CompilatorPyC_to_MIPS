@@ -1,0 +1,29 @@
+void lol()
+{
+  return;
+}
+
+void lol1()
+{
+  return;
+}
+
+void lol2()
+{
+  return;
+}
+
+void lol3()
+{
+  return;
+}
+
+void lol4()
+{
+  return;
+}
+
+int main()
+{
+  return 0;
+}

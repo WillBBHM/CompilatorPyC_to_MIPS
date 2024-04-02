@@ -1,0 +1,14 @@
+int test(int a)
+{
+  print("Je suis dans la fonctions test\n");
+  print("J'ai un argument int qui a pour valeur ", a, "\n");
+  return 10;
+}
+
+int main()
+{
+  int a = 10;
+  int b = test(a);
+  print("Valeur de la fonctions test : ", b, "\n");
+  return 0;
+}

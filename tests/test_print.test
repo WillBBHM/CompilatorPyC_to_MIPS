@@ -1,0 +1,7 @@
+int main()
+{
+  print("Test des print:\n\n");
+  print("print string: ", "Bonjour\n");
+  print("print int: ", 12345, "\n");
+  print("print bool (true et false): ", true, " ", false, "\n");
+}

@@ -1,0 +1,36 @@
+int main() 
+{
+  int nombre_secret = 54;
+  int nombre_propose = 0;
+  int nb_essais = 0;
+
+  while (nb_essais < 5) 
+  {
+
+    print("Il vous reste ", 5 - nb_essais, " essais.\n");
+
+    print("Proposez un nombre entre 1 et 5 : ");
+    input(nombre_propose);
+
+    if (nombre_propose == nombre_secret) 
+    {
+      print("Bravo ! Vous avez trouvé le nombre secret en ", nb_essais + 1, " essais.\n");
+      return 0;
+    } 
+    else 
+    {
+      if (nombre_propose < nombre_secret) 
+      {
+        print("Le nombre secret est plus grand.\n");
+      } 
+      else 
+      {
+        print("Le nombre secret est plus petit.\n");
+      }
+
+      nb_essais = nb_essais + 1;
+    }
+  }
+  print("Vous avez perdu ! Le nombre secret était ", nombre_secret, ".\n");
+  return 0;
+}

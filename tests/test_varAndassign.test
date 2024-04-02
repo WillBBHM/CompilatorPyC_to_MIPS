@@ -1,0 +1,18 @@
+int main()
+{
+  int a = 34;
+  print("Test des variables: \n\n");
+  print("Ma variable 'a' est égale a : ", a, "\n\n");
+  print("J'assigne 5 a ma variable: \n");
+  a = 5;
+  print("Ma variable 'a' est égale a : ", a, "\n\n");
+  print("J'ajoute plus 5 a ma variable: \n");
+  a = a + 5;
+  print("Ma variable 'a' est égale a : ", a, "\n\n");
+  string b = "bonjour";
+  print("Ma variable 'b' est égale a : ", b, "\n\n");
+  print("Je change b par 'hello': \n");
+  b = "hello";
+  print("Ma variable 'b' est égale a : ", b, "\n\n");
+  print("\nTest Valide\n");
+}

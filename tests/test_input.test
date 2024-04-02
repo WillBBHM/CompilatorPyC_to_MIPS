@@ -1,0 +1,24 @@
+int main()
+{
+  print("Test input\n\n");
+  string a = "";
+  int b = 0;
+  bool c = true;
+  print("Comment tu t'appelle ? ");
+  input(a);
+  print("Tu a quelle age ? ");
+  input(b);
+  print("Tu m'aime bien (entrer 1 pour True, 0 ou n'importe quoi pour faux) ? ");
+  input(c);
+
+  print("\nBonjour ", a);
+  if (b < 25)
+  {
+    print("Tu a ", b, " ans tu es jeunes\n");
+  }
+  else
+  {
+    print("Tu a ", b, " ans tu es matures\n");
+  }
+  print("Donc tu m'aime ? ", c, "\n");
+}
